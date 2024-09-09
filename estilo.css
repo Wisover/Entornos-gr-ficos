@@ -1,0 +1,14 @@
+div{
+  color: black;
+  background-color: beige;
+}
+
+#hola{}
+
+.tipo1, .tipo2{
+
+}
+
+a:hover{
+  color: yellow;
+}

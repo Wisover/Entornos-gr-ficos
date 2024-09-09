@@ -1,0 +1,43 @@
+1. ¿ Qué es CSS y para qué se usa? 
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan? 
+3. ¿ Cuáles son las tres formas de dar estilo a un documento? 
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?  
+Ejemplifique cada uno. 
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos? 
+6. ¿ Qué es la herencia? 
+7. ¿ En qué consiste el proceso denominado cascada? 
+
+1) CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada. Las hojas de estilo es una tecnología 
+que nos permite controlar la apariencia de una página web. CSS describe como los elementos dispuestos en la página son presentados al 
+usuario y es un gran avance que complementa el HTML y la Web en general.  Podemos especificar estilos como el tamaño, fuentes, color, 
+espaciado entre textos y recuadros así como el lugar donde disponer texto e imágenes en la página. 
+CSS se utiliza para dar estilo a documentos HTML y XML, separando el contenido de la presentación. 
+2) La regla tiene dos partes: un selector y la  declaración. A su vez la declaración está compuesta por una propiedad y el valor que 
+se le asigne. El selector funciona como enlace entre el documento y el estilo, especificando los elementos que se van a ver afectados 
+por esa declaración. La declaración es la parte de la regla que establece cuál será el efecto.  
+3) Las tres formas más conocidas de dar estilo a un documento son las siguientes: 
+  *Utilizando una hoja de estilo externa que estará vinculada a un documento a través del elemento <link>, el cual debe ir situado 
+  en la sección <head>
+  *Utilizando el elemento <style>, en el interior del documento al que se le quiere dar estilo, y que generalmente se situaría en la 
+  sección <head>. De esta forma los estilos serán reconocidos antes de que la página se cargue por completo.
+  *Utilizando estilos directamente sobre aquellos elementos que lo permiten a través del atributo <style> dentro de <body>. Pero este 
+  tipo de estilo pierde las ventajas que ofrecen las hojas de estilo al mezclarse el contenido con la presentación.
+4) Los tipos de sleectores mas utilizados son: 
+    *Selector de elemento: Selecciona todos los elementos de un tipo específico. Ejemplo: p {color: blue;} selecciona todos los párrafos.
+    *Selector de clase: Selecciona elementos con una clase específica. Ejemplo: .clase {font-size: 20px;} selecciona todos los elementos 
+    con la clase "clase".
+    *Selector de ID: Selecciona un único elemento con un ID específico. Ejemplo: #id {color: green;} selecciona el elemento con el ID
+     "id".
+    *Selector de atributo: Selecciona elementos basados en un atributo específico. Ejemplo: input[type="text"] {border: 1px solid;} 
+    selecciona todos los campos de texto.
+    *Selector universal: Selecciona todos los elementos. Ejemplo: * {margin: 0;} elimina los márgenes de todos los elementos
+5) Una pseudo-clase es una palabra clave que se añade a un selector para especificar un estado especial del elemento seleccionado. 
+Las pseudo-clases más utilizadas para los vínculos son:
+  *:link: Aplica estilos a los enlaces no visitados.
+  *:visited: Aplica estilos a los enlaces ya visitados.
+  *:hover: Aplica estilos cuando el usuario pasa el cursor sobre el enlace.
+  *:active: Aplica estilos al enlace en el momento en que es clicado​
+6) La herencia en CSS se refiere a cómo algunos estilos aplicados a un elemento padre se transmiten automáticamente a sus elementos hijos.
+ Por ejemplo, si se define el color del texto para el elemento <body>, los elementos hijos como <p> y <h1> heredarán ese color a menos
+que se especifique un color diferente para ellos​
+7) Consiste en que el formato final de cualquier elemento depende de la combinación de todas las propiedades que afectan al elemento.

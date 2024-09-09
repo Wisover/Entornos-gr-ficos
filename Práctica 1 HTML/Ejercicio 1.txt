@@ -1,0 +1,38 @@
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última? 
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos 
+con HTML? 
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado?  ¿y 
+obsoleto? 
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01? 
+5. Qué son los metadatos y cómo se especifican en HTML?
+
+1) HTML es un lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia, 
+que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.
+Define una estructura básica y un código para la definición de contenido de una página web: texto, imágenes, videos, juegos.
+Fue creado en 1991. Las distintas versiones son: HTML 1.0, HTML 2.0, HTML 3.2, HTML 4.0 y 4.01, XHTML y el último y en uso es HTML5
+
+2) Los principios básicos que el W3C recomienda seguir para la creación de documentos HTML se basa en 3 mecanismos:
+I_ Un esquema uniforme de nombres para localizar recursos en la Web (p.ej., URIs). 
+II_ Protocolos, para acceder a recursos con nombre en la Web (p.ej., HTTP).
+III_ Hipertexto, para navegar fácilmente entre recursos (p.ej., HTML).
+
+3) Desaprobado (deprecated): Un elemento o atributo se considera desaprobado cuando ya no se recomienda su uso, pero sigue siendo
+compatible para mantener la retrocompatibilidad. Se sugiere que los desarrolladores eviten su uso y empleen alternativas más modernas.
+Obsoleto (obsolete): Un elemento o atributo se considera obsoleto cuando ya no es compatible con los navegadores actuales y 
+ha sido eliminado de la especificación. No debe ser utilizado, ya que no funcionará en la mayoría de los entornos.
+
+4) DTD es la declaración del tipo de documento (DTD Document Type Declaration), esta sección se ubica en la primera línea del archivo HTML, 
+es decir antes de la marca html. Especifica qué elementos y atributos están permitidos en un documento y cómo deben estar organizados. 
+En HTML, el DTD se utiliza para declarar qué versión de HTML está utilizando el documento, lo que ayuda a los navegadores a interpretar 
+correctamente el contenido.
+En HTML 4.01, los DTDs son:
+Estricto (Strict): No permite elementos desaprobados.
+Transicional (Transitional): Permite algunos elementos desaprobados para facilitar la transición.
+Frameset: Para documentos que usan marcos (<frameset>).
+
+5) Metadatos son información sobre los datos de un documento, como el autor, la descripción, las palabras clave, y la codificación
+ de caracteres. No aparecen directamente en la página web, pero son utilizados por navegadores, motores de búsqueda, y otros servicios.
+En HTML, los metadatos se especifican dentro del elemento <head> utilizando la etiqueta <meta>.
+
+
+

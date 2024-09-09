@@ -1,0 +1,52 @@
+I) p.quitar {
+  color: red;
+}
+
+II) *.desarrollo {
+  font-size: 8px;
+}
+
+III) .importante {
+  font-size: 20px;
+}
+
+<p class="desarrollo">
+    En este primer párrafo trataremos lo siguiente:
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+  </p>
+  <p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+  </p>
+  <p>
+  </p>
+  En este otro párrafo trataremos otro tema:<br />
+  xxxxxxxxxxxxxxxxxxxxxxxxx
+  <p class="importante">
+    Y este es el párrafo más importante de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+    </ p>
+  <h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+  <p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+
+I) Aplicación de reglas
+Selector: p.quitar --> Se aplica al elemento <p> que tienen el atributo class con el valor 'normal'
+Declaracion: { 
+  color: red;
+}
+propiedad1:  color; valor: red --> el texto del elemento se mostrará en color rojo.
+
+II) Aplicación de reglas  
+Selector: *#destacado --> Se aplica a todo, ya que '*' es el selector universal.
+Declaracion: { 
+font-size: 8px;
+}
+propiedad1: font-size; valor: 8px --> El tamaño del texto será de 8 píxeles.
+
+III) Aplicación de reglas  
+Selector: .importante --> Se aplica a todo lo que tenga class = 'importante'.
+Declaracion: { 
+font-size: 20px
+}
+propiedad1: font-size; valor: 20px --> El tamaño del texto será de 20 píxeles.

@@ -1,0 +1,290 @@
+3.a)  
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> --> el enlace te redirige directamente a la página de Google, en la 
+misma pestaña.
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> --> el enlace te redirige directamente a la página 
+de Google, pero en una nueva pestaña.
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> --> visualmente no muestra el enlace 
+porque la etiqueta se encuentra sin contenido, a nivel código agrega metadatos.
+<a href="#">Click aquí para ir a Google</a> --> no te redirecciona a ninguna página ya que el href está sin una URL.
+<a href="#arriba">Click aquí para volver arriba</a>  --> tampoco redireccionaa ninguna página ya que el href está sin URL, pero por lo
+puesto en el contenido de la etiqueta, parecer ser algo para configurar a posterior y lo dejamos para no olvidarnos.
+<a name="arriba" id="arriba"></a> --> ni siquiera posee el campo href ni contenido, por lo que no muestra nada visualmente. Pero posee
+identificador y nombre propio y distintivo para aplicar estilos. 
+
+3.b) 
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> --> en un mismo párrafo, se encuentran una
+imagen con fuente local y sus texto alternativo en acso de que no cargue, dentro de la misma etiqueta, se observa un enlace a Google que
+se abre en la pestaña actual.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> --> en este caso, dentro del mismo párrafo
+el contenido que muestra el link que nos deriva a Google es la imagen; y el "Click aquí" simplemente quedó como texto de párrafo.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p> --> en este caso, tanto el link con el texto
+"Click aquí" como la foto (osea tu texto alternativo porque no aparece evidentemente) forman el enlace que nos deriva a Google dentro
+de la misma pestaña.
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p> -->
+ en este caso, ambos elementos (el Click aquí y el texto alternativo de la imagen) nos derivan a la página de Google en la ventana 
+ actual ya que están puestos en etiquetas "a" diferentes, por ende ambos representan un link a su href.
+
+ 3.c) 
+ 
+I) <ul>   
+<li>xxx</li> 
+<li>yyy</li> 
+<li>zzz</li> 
+</ul> 
+
+II) <ol> 
+<li>xxx</li> 
+<li>yyy</li> 
+<li>zzz</li> 
+</ol> 
+
+III) <ol> 
+<li>xxx</li> 
+</ol> 
+<ol> 
+<li value="2">yyy</li> 
+</ol> 
+<ol> 
+<li 
+value="3">zzz</li> 
+</ol> 
+
+IV) <blockquote> 
+<p>1. xxx<br /> 
+2. yyy<br /> 
+3. zzz</p> 
+</blockquote> 
+
+I) Muestra una lista NO ordenada con ítems que contiene 3 elementos.
+II) Muestra una lista ordenada con números en cada uno de los 3 elementos.
+III) A nivel visual muestra lo mismo que el anterior, pero a nivel código, lo que logra es que cada elementos esté dentro de su lista 
+ordenada, y a su vez en los últimos 2 ítems con el atributo 'value', le brinda el número que quiere que preceda al elemento.
+IV) A nivel visual se muestra algo similar, pero a nivel código se genera una cita en bloque y dentro un párrafo por el cual se hace la
+enumeración de forma manual y agrega un salto de línea al final de los dos primeros elementos.
+
+3.d)
+
+I) <table border="1" width="300">
+<tr> 
+<th>Columna 1</th> 
+<th>Columna 2</th> 
+</tr> 
+<tr> 
+<td>Celda 1</td> 
+<td>Celda 2</td>
+</tr> 
+<tr> 
+<td>Celda 3</td> 
+<td>Celda 4</td> 
+</tr> 
+</table> 
+
+II) <table border="1" width="300"> 
+<tr> 
+<td><div align="center"><strong>Columna 1</strong></div></td> 
+<td><div align="center"><strong>Columna 2</strong></div></td> 
+</tr> 
+<tr> 
+<td>Celda 1</td> 
+<td>Celda 2</td> 
+</tr> 
+<tr> 
+<td>Celda 3</td> 
+<td>Celda 4</td> 
+</tr> 
+</table>
+
+I) y II) Ambas tablas son iguales en cuanto a contenido y división. Lo que cambia es que en la "I", la celda de encabezamiento que tiene
+el título de esa columna está dada por la etiqueta <th> que se destina para eso. Mientras que en la "II", la celda de encabezamiento
+está realizada de forma mas "manual", porque agarra un elemento <td> y lo modifica para que sea semejante a un título / encabezado con
+los el atributoa align y agregando la etiqueta strong.
+
+3.e)
+I) <table width="200"> 
+<caption> 
+Título 
+</caption> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd"> 
+&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr>   
+</table> 
+
+II) <table width="200"> 
+<tr> 
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+
+I) y II) A nivel visual no existen diferencias. Pero a nivel código en el "I" se utiliza la etiqueta caption que brinda el encabezado
+para una tabla, mientras que en la "II" se realiza "manualmente" ese encabezado, usando un elemento 'td' y agregando el atributo colspan
+que es para brindar la cantidad de columnnas de la tabla (caption esto lo hace de forma automática) y agregando el align dentro de un
+div.
+
+3.f) 
+I) <table width="200"> 
+<tr> 
+<td colspan="3"><div align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+
+II) <table width="200"> 
+<tr> 
+<td colspan="3"><div align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td colspan="2" 
+bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+<td bgcolor="#dddddd">&nbsp;</td> 
+</tr> 
+</table> 
+
+I) y II) La diferencia radica en que en la tabla "I" se utiliza rowspan, y ese atributo indica que la etiqueta se extienda y ocupe 2
+lugares verticalmente; mientras que en la tabla "II" se utiliza colspan, que indica que le etiqueta se extiende horizontalmente.
+
+3.g)
+I) <table width="200" border="1"> 
+<tr> 
+<td colspan="3"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td colspan="2"rowspan="2">&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="50%">&nbsp;</td> 
+</tr> 
+</table> 
+
+II) <table width="200" border="1" cellpadding="0" 
+cellspacing="0"> 
+<tr> 
+<td colspan="2"><div 
+align="center">Título</div></td> 
+</tr> 
+<tr> 
+<td rowspan="2">&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="50%">&nbsp;</td> 
+</tr> 
+</table>
+
+I) y II) En la tabla "II" el espacio de los bordes es nulo tanto horizontal como verticalmente, gracias a los atributos cellpadding y 
+cellspacing seteados en 0. 
+
+3.h)
+I) <form id="form1" name="form1" action="procesar.php" method="post" target="_blank"> 
+<fieldset> 
+<legend>LOGIN</legend> 
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br /> 
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" /> 
+</fieldset> 
+<input type="submit" id="boton1" name="boton1" value="Enviar" /> 
+</form> 
+
+II) <form id="form2" name="form2" action="" method="get" target="_blank"> 
+LOGIN<br /> 
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br /> 
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br /> 
+<input type="submit" id="boton2" name="boton2" value="Enviar" /> 
+</form> 
+
+III) <form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p 
+ost" target="_blank"> 
+<fieldset> 
+<legend>LOGIN</legend> 
+Usuario: <input type="text" id="usu3" name="usu3" /><br /> 
+Clave: <input type="password" id="clave3" name="clave3" /> 
+</fieldset> 
+<input type="reset" id="boton3" name="boton3" value= 
+"Enviar" /> 
+</form> 
+
+  El formulario I envía los datos a una base de datos php; el II no especifica; mientras que el III envía los datoos a un mail.
+  El formulario I y III, envía los datos en el cuerpo del formulario; mientras que el II los envía mediante URI.
+  El formulario I y III, utiliza un fieldset que indica un grupo de campos; mientras que el II no.
+  El formulario I y III, utiliza una etiqueta legend para poner el título al formulario; mientras que el II lo pone como texto normal.
+  El formulario II, en los campos Usuario y Clave pone como predeterminado "xxx"; mientras que el I y III no.
+  El formmulario II, agrega la etiqueta label.
+  El formulario III, en su input de botón resetea los campos; mientras que el I y II, envía los datos.
+
+3.i) 
+I) <label>Botón 1 
+<button type="button" name="boton1" id="boton1"> 
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br /> 
+<b>CLICK AQUÍ</b></button></label> 
+II) <label>Botón 2 
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" /> 
+</label> 
+
+I y II) El botón I a diferencia del tradicional botón II, agrega una imagen dentro (anidado) de la etiqueta button, y pone en negrita
+el "CLICK AQUÍ" con la etiqueta <b>.
+
+3.j)
+I) <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br /> 
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p> 
+
+II) <p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br /> 
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p> 
+
+I y II) No existen diferencias.
+
+3.k)
+I) <select name="lista"> 
+<optgroup label="Caso 1"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+<optgroup label="Caso 2"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+</select> 
+II) <select name="lista[]" multiple="multiple"> 
+<optgroup label=" Caso 1"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+<optgroup label=" Caso 2"> 
+<option>Mayo</option> 
+<option>Junio</option> 
+</optgroup> 
+</select> 
+
+I y II) La diferencia radica en que en el Select I, no especifica ningun atributo más que el nombre; mientras que en el II se pone el
+atributo multiple y esto hace que en vez de desplegar las opciones, se muestren y haya una barra de movimiento para seleccionar.

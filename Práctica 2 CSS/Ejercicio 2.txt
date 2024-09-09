@@ -1,0 +1,50 @@
+I) p#normal { 
+font-family: arial,helvetica; 
+font-size: 11px; 
+font-weight: bold; 
+} 
+II) *#destacado { 
+border-style: solid; 
+border-color: blue; 
+border-width: 2px; 
+} 
+III) #distinto { 
+background-color: #9EC7EB; 
+color: red; 
+} 
+<p id="normal">Este es un párrafo</p> 
+<p id="destacado">Este es otro párrafo</p> 
+<table id="destacado"><tr><td>Esta es una tabla</td></tr></table> 
+<p id="distinto">Este es el último párrafo</p>
+
+
+I) Aplicación de reglas
+Selector: p#normal --> Se aplica al elemento <p> que tienen el atributo id con el valor 'normal'
+Declaracion: { 
+  font-family: arial, helvetica; --> El texto del párrafo se mostrará en la fuente Arial. Si Arial no está disponible, se usará Helvetica.
+  font-size: 11px; --> El tamaño del texto del párrafo será de 11 píxeles.
+  font-weight: bold; --> El texto del párrafo será negrita.
+}
+propiedad1: font-family; valor:arial, helvetica 
+propiedad2: font-size; valor: 11px 
+propiedad2: font-weight; valor: bold 
+
+II) Aplicación de reglas  
+Selector: *#destacado --> Se aplica a todo, ya que '*' es el selector universal.
+Declaracion: { 
+border-style: solid; --> El borde será sólido, no punteado.
+border-color: blue; --> El borde será de color azul.
+border-width: 2px; --> El borde tendrá un grosor de 2 píxeles.
+}
+propiedad1: border-style; valor: solid
+propiedad2: border-color; valor: blue
+propiedad3: border-width; valor: 2px
+
+III) Aplicación de reglas  
+Selector: #distinto --> Se aplica a todo lo que tenga id = 'distinto'.
+Declaracion: { 
+background-color: #9EC7EB; --> Define el color del fondo.
+color: red; --> El texto del elemento será de color rojo.
+}
+propiedad1: background-color; valor: #9EC7EB.
+propiedad2: color; valor: red.

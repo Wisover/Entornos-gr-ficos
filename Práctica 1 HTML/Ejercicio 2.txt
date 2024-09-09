@@ -1,0 +1,88 @@
+Analizar  los  siguientes  segmentos  de  código  indicando  en  qué  sección  del  documento  HTML  
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos 
+(nombre y valor), aclarando si es obligatorio. 
+
+2.a) <!-- Código controlado el día 12/08/2009 →
+Es un comentario, se puede poner en cualquier parte del HTML dentro de sus etiquetas. A nivel código no realiza efectos, solamente es para control de los 
+desarrolladores. 
+Elemento: No es un elemento HTML, es un comentario.
+Etiqueta de apertura: <!--
+Etiqueta de cierre: -->
+Contenido del comentario: "Código controlado el día 12/08/2009"
+Atributos: No aplica, ya que los comentarios no tienen atributos
+Lo único obligatorio son las etiquetas de apertura y cierre. El contenido del comentario podria estar vacío, aunque sería sin fundamento.
+
+2.b) <div id="bloque1">Contenido del bloque1</div>
+Es el contenedor genérico para el contenido, debe estar dentro del body. No tiene efecto en el contenido o en el diseño hasta que se 
+le aplica un estilo de alguna manera usando CSS. 
+Elemento: <div>
+Etiqueta de apertura: <div>
+Etiqueta de cierre: </div>
+Contenido del div: "Contenido del bloque1"
+Atributos: id --> que lo identifica para luego darle un estilo particular con CSS.
+Lo único obligatorio son las etiquetas de apertura y cierre. El contenido del div podria estar vacío, aunque sería sin fundamento.
+
+2.c) <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" /> 
+Es la etiqueta para introducir una imagen en el HTML. Su efecto es el de que aparezca la iamgen en la página web (siempre y cuando exista
+a través del tiempo en su fuente). 
+Elemento: <img />
+Etiqueta de apertura: <img />
+Etiqueta de cierre: no tiene
+Contenido del div: imagen
+Atributos: src --> indica la fuente donde se aloja la imagen; alt --> muestra texto alternativo en caso de que no cargue la imagen; id
+--> que lo identifica para luego darle un estilo particular con CSS; name --> que lo identifica para luego darle un estilo particular
+con CSS pero solo HTML4 o anteriores; width y height --> indican ancho y altura de la imagen respectivamente; longdesc --> La URL como 
+descripción de una imagen mostrada, complementa al texto de alt.
+
+2.d) <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " /> 
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" /> 
+Se colocan dentro de la sección <head> del documento HTML. Los metadatos proporcionados por las etiquetas <meta> no se muestran 
+en la página, pero afectan cómo se procesa y maneja la información del documento. Su funcion es definir palabras clave relacionadas con 
+el contenido  del documento, que pueden ser usadas por motores de búsqueda para indexar la página. En este caso también define una fecha 
+de expiración para la página.
+Elemento: <meta />
+Etiqueta de apertura: <meta />
+Etiqueta de cierre: no tiene
+Contenido: no tiene
+Atributos: name --> que lo identifica para luego darle un estilo particular con CSS pero solo HTML4 o anteriores; lang --> indica lenguaje
+content --> define palabras claves; http-equiv --> Indica un encabezado HTTP
+
+2.e) <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a> 
+Se trata de un enlace o hipervínculo, que es parte del contenido interactivo visible de la página web. Su efecto es que Crea un enlace que, al hacer 
+clic, redirige al usuario a la URL especificada. 
+Elemento: <a>
+Etiqueta de apertura: <a>
+Etiqueta de cierre: no tiene
+Contenido: Resumen HTML
+Atributos: href --> indica la URL a la que redirige; type --> indica el tipo de documento; hreflang --> especifica el idioma del contenido
+del recurso enlazado; charset --> define la codificación de caracteres del recurso enlazado; rel --> especifica la relación entre el 
+documento actual y el recurso vinculado.
+La etiqueta de apertura es obligatoria y href que tiene el vinculo al que redirecciona.
+
+2.f) Es una tabla con contenido visible en la página web. Su efecto es crear una tabla con un ancho de 200 píxeles, un título y 
+datos organizados en filas y columnas. 
+Elemento: <table> que representa la tabla
+  Etiqueta de apertura: <table>
+  Etiqueta de cierre: </table>
+  Contenido: la tabla y sus elementos
+  Atributos: width --> indicando ancho, summary --> proporciona una descripción textual del propósito de la tabla
+<caption> indica el título de la tabla y su alineación
+  Etiqueta de apertura: <caption>
+  Etiqueta de cierre: </caption>
+  Contenido: Titulo
+  Atributos: align --> brinda la alineación del título
+<tr> define una fila en una tabla
+  Etiqueta de apertura: <tr>
+  Etiqueta de cierre: </tr>
+  Contenido: los th correspondientes
+  Atributos: no tiene 
+<th> define una celda de encabezado en una tabla
+  Etiqueta de apertura: <th>
+  Etiqueta de cierre: </th>
+  Contenido: A/B/C
+  Atributos: no tiene
+<td> define la celda de una tabla que contiene datos.
+  Etiqueta de apertura: <td>
+  Etiqueta de cierre: </td>
+  Contenido: &nbsp
+  Atributos: no tiene
