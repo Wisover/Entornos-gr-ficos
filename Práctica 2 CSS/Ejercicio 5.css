@@ -1,0 +1,49 @@
+h1 {
+  color: red;
+}
+h2 {
+  color: red;
+}
+h3 {
+  color: red;
+}
+h4 {
+  color: red;
+}
+h5 {
+  color: red;
+}
+h6 {
+  color: red;
+}
+
+div p a[href] {
+  color: black;
+}
+
+#ultimo ul li  {
+  color: yellow;
+}
+
+#ultimo ul li [href] {
+  color: blue;
+}
+
+#importante {
+  color: green;
+}
+
+h1[title] {
+  color: blue;
+}
+
+ol a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Estilo para enlaces visitados en listas ordenadas */
+ol a:visited {
+  color: violet;
+  text-decoration: none;
+}
