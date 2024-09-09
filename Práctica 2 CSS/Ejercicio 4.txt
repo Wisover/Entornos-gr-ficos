@@ -1,0 +1,45 @@
+Opción A: <body> 
+<p class="contenido" style="font-weight: normal;"> 
+Este es un texto ...............</p> 
+<table> 
+<tr> 
+<td>Y esta es una tabla.......</td> 
+</tr> 
+<tr> 
+<td><a href="http://www.google.com.ar">con un 
+enlace</a></td> 
+</tr> 
+</table> 
+</body> 
+
+Respuesta: * {color: green;} --> logra que todo lo que no tenga una declaración de estilo más específica, su color de la letra, pase a 
+ser verde.
+a:link {color:gray } --> al elemento "a", si aún no fue visitado lo popne en color gris.
+a:visited{color:blue } --> al elemento "a", lo pone en color azul si el sitio ese ya fue visitado.
+a:hover {color:fuchsia } --> cuando se le ponga el cursor encima, cambiará a fucsia el texto.
+a:active {color:red } --> cuando se lo clickea al link, se pone por una porción muy ínfima de tiempo en color rojo.
+p {font-family: arial,helvetica;font-size: 10px;color:black; } --> solo cambia el tipo de fuente de la letra pero no el tamaño, ya que 
+está seteado en los atributos del HTML en las etiquetas del párrafo.
+.contenido{font-size: 14px;font-weight: bold; } --> esto debería aplicarle dichos atributos pero no lo hace porque el estilo de la letra
+está definido en el HTML, tanto el tamaño de la fuente como si es o no negrita.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Opción B: <body class="contenido"> 
+<p> Este es un texto................</p> 
+<table> 
+<tr> 
+<td>Y esta es una tabla.......</td> 
+</tr> 
+<tr> 
+<td><a href="http://www.google.com.ar">con 
+un enlace</a></td> 
+</tr> 
+</table> 
+</body> 
+
+Respuesta: al elemento "a", le sucede lo mismo que al anterior respecto a todo (visited, hover, link, active) menos a su tamaño de 
+letra y el tipo de letra que en este caso es negrita ya que ese se ven directamente afectado por la declaración de la clase 
+"contenido". No se pone en color verde, porque los atributos visited, hover, link, active, son más específicos.
+A la tabla le sucede lo mismo, tanto el tamaño, color y tipo de letra (negrita) se ven afectados por la clase "contenido".
+Y respecto al párrafo, todos sus atributos (tamaño, color de letra, tipo de fuente) menos si es negrita o no (ya que esto depende de 
+la clase "contenido"), dependen de la sección declarativa del CSS que hace alusión a todos los elementos párrafo.
