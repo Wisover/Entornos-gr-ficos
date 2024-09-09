@@ -42,7 +42,6 @@ ol a {
   text-decoration: none;
 }
 
-/* Estilo para enlaces visitados en listas ordenadas */
 ol a:visited {
   color: violet;
   text-decoration: none;
