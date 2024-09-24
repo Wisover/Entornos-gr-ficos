@@ -1,0 +1,3 @@
+a) Este código se usa para generar una tabla con un número fijo de filas y columnas.
+b) Este código cuando la página carga por primera vez, muestra un input para que pongamos la edad y el boton para enviar dicho número.
+Una vez esto realizado, el formulario se envía y procesa pra mostrar "Mayor" o "Menor de edad" dependiendo si es o no: mayor o igual a 21.
