@@ -1,0 +1,8 @@
+a) Los 3 códigos son equivalentes respecto a la salida final por pantalla. Solo que el código 3, utiliza "Do...While", por lo que mínimo
+se ejecuta una sola vez y después evalua; mientras que los otros 2 evalúan antes de ejecutar.
+b) Los 4 códigos son equivalentes respecto a la salida final por pantalla. La única diferencia es que el código 1 y 2,  utilizan una 
+estructura de for estándar con la condición y el incremento dentro de la cabecera (solo cambia el lugar del print entre ellos); mientras
+que los códigos 3 y 4 emplean un enfoque en el que la condición de salida se maneja con un if y break dentro del cuerpo del ciclo, en vez
+de que sea dentro de la estructura for.
+c) Ambos códigos son equivalentes, su única diferencia es la estructura de control a utilizar. En el código 1, se utiliza "if else if" y 
+en el código 2, se utiliza "switch" con sus respectivos "case's". Para estos casos, es mejor usar switch.

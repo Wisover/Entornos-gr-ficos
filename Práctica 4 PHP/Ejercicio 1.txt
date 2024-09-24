@@ -1,0 +1,63 @@
+function doble($i) { 
+    return $i*2; 
+} 
+$a = TRUE;    
+$b = "xyz";    
+$c = 'xyz';   
+$d = 12;      
+echo gettype($a);   
+echo gettype($b);    
+echo gettype($c); 
+echo gettype($d);  
+if (is_int($d)) { 
+    $d += 4; 
+} 
+if (is_string($a)) { 
+    echo "Cadena: $a"; 
+} 
+$d = $a ? ++$d : $d*3; 
+$f = doble($d++); 
+$g = $f += 10; 
+echo $a, $b, $c, $d, $f , $g; 
+?>  
+
+Variables:
+* $a = TRUE; --> boolean
+* $b = "xyz"; --> string    
+* $c = 'xyz'; --> string  
+* $d = 12; --> integer 
+* $f = 44; --> integer
+* $g = 44; --> integer
+
+Operadores:
+* "=" Operador de asignación.
+* "++" Incremento en uno de una variable.
+* "+=" Suma y asignación.
+* "*" Multiplicación.
+* "?:" Operador ternario. Se utiliza para evaluar una condición y retornar uno de dos valores dependiendo de si la condición es TRUE o FALSE.
+
+Funciones y parámetros:
+* doble($i) Retorna el valor de $i * 2
+    Parámetro: $i
+* gettype($var) Devuelve el tipo de la variable
+    Parámetro: la variable que se le pase
+* is_int($var): Devuelve TRUE si la variable es un entero, FALSE en caso contrario
+    Parámetro: la variable que se le pase
+* is_string($var): Devuelve TRUE si la variable es un string, FALSE en caso contrario
+    Parámetro: la variable que se le pase
+
+Estructuras de control:
+* if Sentencia condicional.
+
+Salida por pantalla:
+
+boolean
+string
+string
+integer
+1
+xyz
+xyz
+18
+44
+44
