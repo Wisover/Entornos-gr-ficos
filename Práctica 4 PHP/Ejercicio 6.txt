@@ -1,0 +1,2 @@
+No son equivalentes. En el Código 1, el array tiene un elemento adicional con la clave 0 y el valor 4, mientras que en el Código 2 
+es asociativo puro  y se agrega un elemento vacío al array que no tiene un valor específico asignado.

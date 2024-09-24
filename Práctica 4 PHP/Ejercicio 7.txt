@@ -1,0 +1,4 @@
+a) Salida: bar1
+b) Salida: 5942
+c) Salida: No hay saida en pantalla y la variable $matriz ya no está definida después de la llamada a unset($matriz), porque borró
+el array.
