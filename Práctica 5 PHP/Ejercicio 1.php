@@ -1,23 +1,38 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulario</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+// Cargar PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-<body>
-  <?php
-  $destinatario = "xx@xx.com ";
-  $asunto = "Prueba";
-  $cuerpo = "Esto es una prueba de envío de 
-correo a través del servidor";
-  mail($destinatario, $asunto, $cuerpo)
-  ?>
-</body>
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
 
-</html>
+$mail = new PHPMailer(true);
+
+try {
+  // Configuración del servidor SMTP
+  $mail->isSMTP();
+  $mail->Host       = 'smtp.gmail.com';
+  $mail->SMTPAuth   = true;
+  $mail->Username   = 'santinoravarotto@gmail.com';
+  $mail->Password   = 'sxdz ybxn zish xwsm';
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $mail->Port       = 587;
+
+  // Destinatario
+  $mail->setFrom('santinoravarotto@gmail.com', 'GSR');
+  $mail->addAddress('santirava98@gmail.com', 'Rava');
+
+  // Contenido del correo
+  $mail->isHTML(true);
+  $mail->Subject = 'Primer prueba de envio de mail con PHPMailer';
+  $mail->Body    = '<h1>¡Hola!</h1><p>Este es un correo de prueba en formato HTML.</p>';
+  $mail->AltBody = 'Este es el contenido alternativo para clientes de correo sin soporte HTML.';
+
+  // Enviar correo
+  $mail->send();
+  echo 'El correo se ha enviado correctamente';
+} catch (Exception $e) {
+  echo "No se pudo enviar el correo. Error: {$mail->ErrorInfo}";
+}
