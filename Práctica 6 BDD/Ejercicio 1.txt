@@ -1,0 +1,39 @@
+Consulta a una base de datos: 
+Para comenzar la comunicación con un servidor de base de datos MySQL, es 
+necesario abrir una conexión a ese servidor. Para inicializar esta conexión, PHP ofrece la función:  mysqli_connect
+Todos sus parámetros son opcionales, pero hay tres de ellos que generalmente son necesarios:  $hostname, $nombreUsuario y $contraseña.
+Una vez abierta la conexión, se debe seleccionar una base de datos para su uso, mediante la función:  mysqli_select_db
+Esta función debe pasar como parámetro: $nombreConexión y $nombreBaseDatos
+La función mysqli_query () se utiliza para: ejecutar una consulta a la base de datos que especifiquemos. Devuelve TRUE o FALSE para 
+indicar si las operaciones UPDATE, INSERT o DELETE han tenido éxito.
+y requiere como parámetros: $nombreConexion y $query (en lenguaje SQL)
+La cláusula or die() se utiliza para: capturar el error.
+y la función mysqli_error () se puede usar para: devolver el último mensaje de error para la llamada más reciente a una función que 
+puede haberse ejecutado correctamente o haber fallado.
+Si la función mysqli_query() es exitosa, el conjunto resultante retornado se almacena en una variable, por ejemplo 
+$vResult, y a continuación se puede ejecutar el siguiente código (explicarlo): 
+
+<?php 
+while ($fila = mysqli_fetch_array($vResultado))  
+{ 
+?> 
+<tr> 
+<td><?php echo ($fila[0]); ?></td> 
+<td><?php echo ($fila[1]); ?></td> 
+<td><?php echo ($fila[2']); ?></td> 
+</tr>    
+<tr> 
+<td colspan="5"> 
+<?php 
+} 
+mysqli_free_result($vResultado); 
+mysqli_close($link); 
+?> 
+
+Explicación: el while va a iterar mientras haya filas disponibles en $vResult. Se van obteniendo las filas del resultado de la consulta y
+se las asigna a la variable $fila ya que vuelve como un array asociativo.
+Dentro de la estructura repetitiva, lo que sucederá es que cada vez que se obtiene una fila, se generará una nueva fila HTML (tr). Dentro
+de ésta, se generarán 3 celdas en esa fila que se cierra. Se abre otra fila con un ancho de 5 columnas (quizá para dejar espacio, no
+queda especificado). En definitiva, va armando una tabla con los datos extraidos de la base de datos.
+Con mysqli_free_result($vResultado) se libera la memoria asociada con el conjunto de resultados para evitar su uso innecesario y luego,
+con mysqli_close($link) se cierra la conexión a la base de datos.
