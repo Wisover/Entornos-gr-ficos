@@ -48,6 +48,9 @@
             </select>
           </td>
         </tr>
+
+        <input type="hidden" name="id" value="<?php echo ($fila['id']); ?>">
+
         <tr>
           <td colspan="2" align="center"> <input type="SUBMIT" name="Submit" value="Modificar"> </td>
         </tr>
