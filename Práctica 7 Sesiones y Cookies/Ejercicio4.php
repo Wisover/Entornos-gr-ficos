@@ -1,16 +1,19 @@
 <?php
+// Inicializo la variable
+$tipoTitular = null;
 
+// Verifico si se envía el formulario
 if (isset($_POST['titulo'])) {
-
+  // Almaceno el nuevo tipo de titular en una cookie con una duración de 90 días
   $titulo = $_POST['titulo'];
   setcookie("tipo_titular", $titulo, time() + (60 * 60 * 24 * 90));
-}
-
-// Verifico si hay un titular almacenado en la cookie
-if (isset($_COOKIE['tipo_titular'])) {
-  $tipoTitular = $_COOKIE['tipo_titular'];
+  // Almaceno el nuevo tipo de titular en la variable
+  $tipoTitular = $titulo; // Actualizo la variable con el nuevo valor
 } else {
-  $tipoTitular = null;
+  // Verifico si hay un titular almacenado en la cookie
+  if (isset($_COOKIE['tipo_titular'])) {
+    $tipoTitular = $_COOKIE['tipo_titular'];
+  }
 }
 
 // Array que relaciona cada tipo de titular con su título
