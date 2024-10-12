@@ -1,7 +1,7 @@
 <?php
-// Verifico si se ha enviado el formulario
+
 if (isset($_POST['username'])) {
-  // Almaceno el nombre de usuario en una cookie
+  // Almaceno el nombre de usuario 
   $username = $_POST['username'];
   setcookie("username", $username, time() + (60 * 60 * 24 * 365)); // Cookie válida por un año
 } else {
@@ -9,7 +9,7 @@ if (isset($_POST['username'])) {
   if (isset($_COOKIE['username'])) {
     $username = $_COOKIE['username'];
   } else {
-    $username = ""; // Si no hay cookie, el nombre será vacío
+    $username = "";
   }
 }
 ?>
@@ -30,7 +30,7 @@ if (isset($_POST['username'])) {
   </form>
 
   <?php
-  // Muestra el último nombre de usuario ingresado si existe
+
   if (!empty($username)) {
     echo "<p>Último nombre de usuario ingresado: <strong>$username</strong></p>";
   }

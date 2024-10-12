@@ -1,5 +1,4 @@
 <?php
-// No debe haber ningún espacio antes de esta línea
 if (isset($_POST["estilo"])) {
   $estilo = $_POST["estilo"];
   setcookie("estilo", $estilo, time() + (60 * 60 * 24 * 90));
