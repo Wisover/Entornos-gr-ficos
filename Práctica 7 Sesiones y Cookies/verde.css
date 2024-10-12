@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+  background-color: green;
+  color: #ffffff;
+  /* Color corregido */
+  font-family: Verdana, Geneva, sans-serif;
+}
